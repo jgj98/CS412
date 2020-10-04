@@ -18,10 +18,6 @@ const getLambda = lambda => {
             break;
     }
 }
-
-console.log(getLambda('b')("supercaninescanscrushcats"));
-
-console.log(getLambda('b')("supercalifragilisticexpialidocious"));
 module.exports = {getLambda};
 
 
