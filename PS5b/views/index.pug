@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  ul
+  -for (let key of Object.keys(result))
+    -let inner_result = result[key]
+    -for(let inner_key of Object.keys(inner_result))
+      if inner_key != 'condition'
+        li= inner_key + ": " + inner_result[inner_key]
