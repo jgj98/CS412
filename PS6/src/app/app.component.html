@@ -1,0 +1,20 @@
+<h1>Click a city for info!</h1>
+
+<div>
+  <ul *ngFor="let place of weatherList">
+    <li (click)="setSelectedWeather(place)">{{place.name}}</li>
+  </ul>
+</div>
+
+
+<div *ngIf="this.selectedWeather != null">
+  <h2>{{this.selectedWeather.name}} Stats</h2>
+  <ul>
+  <li>State: {{this.selectedWeather.region}}</li>
+    <li>Country: {{this.selectedWeather.country}}</li>
+    <li>Temperature: {{this.selectedWeather.temp}} degrees</li>
+  </ul>
+</div>
+<!-- details go here -->
+
+
