@@ -1,0 +1,8 @@
+<div *ngIf="Weather != null">
+  <ul *ngFor="let place of Weather">
+    <li> {{place.name}}</li>
+    <li> {{place.region}}</li>
+    <li> {{place.temp}} Degrees</li>
+    <li> Cache: {{place.cache}}</li>
+  </ul>
+</div>
